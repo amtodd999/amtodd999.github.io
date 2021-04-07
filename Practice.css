@@ -152,11 +152,17 @@ a:hover {
 }
 
 .button-box1 {
-    max-height: 150px;
+    max-height: 50px;
+    margin-bottom: 50px;
 }
 .diamond-box {
-    margin: 20px auto;
+    /*margin: 20px auto;*/
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 150px;
     max-height: 150px;
+    align-content: center;
     border-color: purple;
 }
 #diamond1 {
@@ -165,23 +171,106 @@ a:hover {
     height: 15px;
     transform: rotate(45deg);
     position: relative;
-    border: solid 2.5px gray;
+    border: solid 2.5px white;
     align-content: center;
     background-color: transparent;
+    animation-name: diamond1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
-.diamond2{
+
+#diamond1:before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    align-content: center;
+    top: 5px;
+    border: solid 2.5px white;
+    background-color: transparent;
+    animation-name: diamond2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-delay: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+#diamond1:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    align-content: center;
+    top: 23px;
+    left: 25px;
+    border: solid 2.5px white;
+    background-color: transparent;
+    animation-name: diamond3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 400ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+@keyframes diamond1 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .5)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .25)
+    }
+    100% {
+        border: none
+    }
+}
+
+@keyframes diamond2 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .70)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .20)
+    }
+    100% {
+        border: none
+    }
+}
+
+@keyframes diamond3 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .70)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .20)
+    }
+    100% {
+        border: none
+    }
+}
+/*.diamond2{
     z-index: 3;
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
     position: relative;
-    border: solid 2.5px gray;
-    
+    border: solid 2.5px blue;
+    align-content: center;
+    padding-top: 20px;
     background-color: transparent;
 }
 .diamond3{
-
-}
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    position: relative;
+    border: solid 2.5px green;
+    align-content: center;
+    background-color: transparent;
+}*/
 
 
 .flexbox-container2 {

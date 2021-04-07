@@ -151,6 +151,106 @@ a:hover {
     margin-bottom: 150px;
 }
 
+.button-box1 {
+    max-height: 50px;
+    margin-bottom: 50px;
+}
+.diamond-box {
+    /*margin: 20px auto;*/
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 150px;
+    max-height: 150px;
+    align-content: center;
+    border-color: purple;
+}
+#diamond1 {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    position: relative;
+    border: solid 2.5px white;
+    align-content: center;
+    background-color: transparent;
+    animation-name: diamond1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+#diamond1:before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    align-content: center;
+    top: 5px;
+    border: solid 2.5px white;
+    background-color: transparent;
+    animation-name: diamond2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-delay: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+#diamond1:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    align-content: center;
+    top: 23px;
+    left: 25px;
+    border: solid 2.5px white;
+    background-color: transparent;
+    animation-name: diamond3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 400ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+@keyframes diamond1 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .5)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .25)
+    }
+    100% {
+        border: none
+    }
+}
+
+@keyframes diamond2 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .70)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .20)
+    }
+    100% {
+        border: none
+    }
+}
+
+@keyframes diamond3 {
+    0% {
+        border: solid 2.5px rgba(255, 255, 255, .70)
+    }
+    50% {
+        border: solid 2.5px rgba(255, 255, 255, .20)
+    }
+    100% {
+        border: none
+    }
+}
+
 .flexbox-container2 {
     display: flex;
     margin-right: 5px;
@@ -304,71 +404,7 @@ span .flexbox-container2 {
     color: white;
         
 }
-/*
-.flexbox-container3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start; 
-    align-items: stretch; 
-    align-content:center  ; 
-    background-image: url("assets/star_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
 
-.flexbox-container3b {
-    display: flex;
-    background-position: 90%, 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hogwarts-house-box1 {
-    text-justify: left;
-    margin-bottom: 50px;
-}
-
-#sorting-hat {
-    font-family: Mason, sans-serif;
-    font-size: 90%;
-    color: white;
-    font-weight: 700;
-}
-
-.hogwarts-house-box1 h1 {
-    font-family: Bluu Next, serif;
-    color: white;
-    font-weight: 700;
-    font-size: 3em;
-}
-
-.hogwarts-house-box1 h3 {
-    color: white;
-    font-family: Sofia Pro, serif;
-    font-size:.85em;
-}
-
-#sort-button {
-    font-family: Sofia Pro, serif;
-    font-style: normal;
-    color: white;
-    padding: 18px 31px;
-    border-radius: 30px;
-    min-width:250px;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 150px;
-}
-
-.discover-your-house-box2 img {
-    margin-left: 50px;
-    margin-right: 20px;
-    z-index: 1;
-}
-*/
 .flexbox-container-3{
     display:flex;
     flex-direction: row-reverse;
@@ -435,11 +471,6 @@ span .flexbox-container2 {
     line-height: 1;
     margin-bottom: 150px;
 }
-
-
-
-
-
 
 .flexbox-container4 {
     display:flex;

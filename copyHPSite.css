@@ -51,7 +51,7 @@ a:hover {
     background: linear-gradient(rgb(65, 63, 63), black);
 }
 
-.logo-box1 {
+.logo-box1 {/*This is only sticky in the first container*/
     min-height: 100px;
     width: 100%;
     position: sticky;
@@ -156,14 +156,13 @@ a:hover {
     margin-bottom: 50px;
 }
 .diamond-box {
-    /*margin: 20px auto;*/
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 150px;
-    max-height: 150px;
+    min-height: 24px;/*Added element per https://css-tricks.com/content-jumping-avoid/ to stop screen from jumping*/
     align-content: center;
-    border-color: purple;
+    
 }
 #diamond1 {
     z-index: 3;
@@ -175,9 +174,8 @@ a:hover {
     align-content: center;
     background-color: transparent;
     animation-name: diamond1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-delay: .5s;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -192,9 +190,9 @@ a:hover {
     border: solid 2.5px white;
     background-color: transparent;
     animation-name: diamond2;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.15s;
-    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-delay: .75s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -210,8 +208,8 @@ a:hover {
     border: solid 2.5px white;
     background-color: transparent;
     animation-name: diamond3;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.15s;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
     animation-delay: 1.25s;
     animation-direction: normal;
     animation-iteration-count: infinite;
@@ -294,10 +292,11 @@ span .flexbox-container2 {
 .fake-slider-box4 {
     position: absolute;
     bottom: 0;
-    left: 5%;
+    left: 15%;
     z-index: 1;
     justify-items: left;
 }
+
 
 .feature1 {
     display: inline-block;

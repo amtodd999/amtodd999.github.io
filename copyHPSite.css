@@ -176,7 +176,8 @@ a:hover {
     background-color: transparent;
     animation-name: diamond1;
     animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
+    animation-delay: .5s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -192,8 +193,8 @@ a:hover {
     background-color: transparent;
     animation-name: diamond2;
     animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
-    animation-delay: 300ms;
+    animation-duration: 1.15s;
+    animation-delay: 1s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -210,8 +211,8 @@ a:hover {
     background-color: transparent;
     animation-name: diamond3;
     animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-delay: 400ms;
+    animation-duration: 1.15s;
+    animation-delay: 1.25s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
